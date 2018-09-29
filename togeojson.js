@@ -47,7 +47,14 @@ var toGeoJSON = (function() {
         var coords = v.replace(trimSpace, '').split(splitSpace),
             o = [];
         for (var i = 0; i < coords.length; i++) {
-            o.push(coord1(coords[i]));
+            var subcx = coord1(coords[i]);
+            if (subcx.length > 3 && subcx.length % 3 == 0) {
+                for (var ii = 0; ii < subcx.length; ii+=3) {
+                    o.push([subcx[ii],subcx[ii+1],subcx[ii+2]]);
+                }
+            } else {
+                o.push(subcx);
+            }
         }
         return o;
     }

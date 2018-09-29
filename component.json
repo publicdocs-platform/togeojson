@@ -4,7 +4,7 @@
     "togeojson.js"
   ],
   "main": "togeojson.js",
-  "repo": "mapbox/togeojson",
+  "repo": "publicdocs/togeojson",
   "keywords": [
     "kml",
     "geojson",
@@ -18,5 +18,5 @@
   ],
   "description": "convert KML and GPX to GeoJSON",
   "name": "togeojson",
-  "license": "BSD"
+  "license": "SEE LICENSE IN LICENSE"
 }
